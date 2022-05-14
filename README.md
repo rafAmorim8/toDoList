@@ -3,8 +3,8 @@
 </h1>
 
 <h4 align="center">
-  To Do app built as a challenge for the Chapter I of the Ignite - ReactJS course @ [RocketSeat](https://www.rocketseat.com.br/?utm_source=github&utm_medium=profile&utm_campaign=perpetual&utm_term=organic&utm_content=profile) :rocket:
-</h4>
+  To Do app built as a challenge for the Chapter I of the Ignite - ReactJS course at :rocket: [RocketSeat](https://www.rocketseat.com.br/)
+  </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rafAmorim8/toDoList">
 
@@ -21,7 +21,22 @@
   <img alt="Website Thumbnail" src="https://res.cloudinary.com/dokwfizst/image/upload/v1652511195/rafAmorim/toDo_thumb_jaiast.jpg">
 </p>
 
+## :floppy_disk: Installation
 
+<h4>Follow the steps bellow to run this locally on your machine: </h4>  
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/rafAmorim8/toDoList.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+
+3. Run the project
+```sh
+   npm run dev
+   
 ## :books: Technologies
 
 This project was developed using:
