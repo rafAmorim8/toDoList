@@ -29,11 +29,15 @@
    ```sh
    git clone https://github.com/rafAmorim8/toDoList.git
    ```
-2. Install NPM packages
+2. Navigate to the project folder
+   ```sh
+   cd toDoList
+   ```
+3. Install NPM packages
    ```sh
    npm install
    ```
-3. Run the project
+4. Run the project
    ```sh
    npm run dev
    ```
