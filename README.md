@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  To Do app built as a challenge for the Chapter I of the Ignite - ReactJS course at :rocket: [RocketSeat](https://www.rocketseat.com.br/)
+  To Do app built as a challenge for the Chapter I of the Ignite - ReactJS course at :rocket: [RocketSeat]:(https://www.rocketseat.com.br/)
   </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rafAmorim8/toDoList">
@@ -32,10 +32,12 @@
 2. Install NPM packages
    ```sh
    npm install
+   ```
 
 3. Run the project
 ```sh
    npm run dev
+   ```
    
 ## :books: Technologies
 
