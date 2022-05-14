@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import '../styles/tasklist.scss'
+import '../styles/tasklist.scss';
 
-import { FiTrash, FiCheckSquare } from 'react-icons/fi'
+import { FiTrash, FiCheckSquare } from 'react-icons/fi';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface Task {
   id: number;
@@ -16,6 +19,17 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
+    const id = Date.now();
+
+    if (!newTaskTitle) {
+
+      toast.error("Digite um titulo para sua atividade");
+      console.log("osigsd");
+
+      return;
+    }
+
+    console.log("passei");
   }
 
   function handleToggleTaskCompletion(id: number) {
