@@ -4,7 +4,7 @@ import '../styles/tasklist.scss';
 
 import { FiTrash, FiCheckSquare } from 'react-icons/fi';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 interface Task {
@@ -19,25 +19,40 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
-    const id = Date.now();
-
     if (!newTaskTitle) {
-
       toast.error("Digite um titulo para sua atividade");
-      console.log("osigsd");
-
       return;
     }
+    
+    const newTask: Task = {
+      id: Date.now(),
+      title: newTaskTitle,
+      isComplete: false
+    }
 
-    console.log("passei");
+    setTasks([newTask, ...tasks]);
+    setNewTaskTitle('');
   }
 
   function handleToggleTaskCompletion(id: number) {
     // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
+    const newTasks = tasks.map(task => {
+      if(task.id === id){
+        const wasCompleted = task.isComplete;
+
+        return {...task, isComplete: !wasCompleted}
+      }
+      return task;
+    });
+    
+    setTasks(newTasks);
   }
 
   function handleRemoveTask(id: number) {
     // Remova uma task da listagem pelo ID
+    const newFilteredTasks: Task[] = tasks.filter(task => task.id !== id);
+
+    setTasks(newFilteredTasks);
   }
 
   return (
