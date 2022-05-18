@@ -18,7 +18,7 @@
 
 ## :computer: Demo
 <p align="center">
-  <img alt="Website Thumbnail" src="https://res.cloudinary.com/dokwfizst/video/upload/v1652908904/rafAmorim/toDo_demo_vgsy8e.gif">
+  <img alt="Website Thumbnail" src="https://res.cloudinary.com/dokwfizst/video/upload/q_auto:best/v1652908904/rafAmorim/toDo_demo_vgsy8e.gif">
 </p>
 
 ## :floppy_disk: Installation
