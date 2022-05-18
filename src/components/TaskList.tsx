@@ -18,7 +18,6 @@ export function TaskList() {
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
   function handleCreateNewTask() {
-    // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
     if (!newTaskTitle) {
       toast.error("Digite um titulo para sua atividade");
       return;
@@ -35,7 +34,6 @@ export function TaskList() {
   }
 
   function handleToggleTaskCompletion(id: number) {
-    // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
     const newTasks = tasks.map(task => {
       if(task.id === id){
         const wasCompleted = task.isComplete;
@@ -49,7 +47,6 @@ export function TaskList() {
   }
 
   function handleRemoveTask(id: number) {
-    // Remova uma task da listagem pelo ID
     const newFilteredTasks = tasks.filter(task => task.id !== id);
 
     setTasks(newFilteredTasks);
@@ -58,7 +55,7 @@ export function TaskList() {
   return (
     <section className="task-list container">
       <header>
-        <h2>Minhas tasks</h2>
+        <h2>My tasks</h2>
 
         <div className="input-group">
           <input 
