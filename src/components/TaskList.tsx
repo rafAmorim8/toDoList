@@ -19,7 +19,7 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     if (!newTaskTitle) {
-      toast.error("Digite um titulo para sua atividade");
+      toast.error("Type a title for your task");
       return;
     }
     
